@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: D6EAF8"
+            fx:controller="com.example.practica4di.VistaAgregarContactoController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+    <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
+    <image>
+        <Image url="C:\\Users\\Nomak\\IdeaProjects\medac\practica4DI\images\medac.png" />
+    </image>
+    </ImageView>
+    </children>
+</AnchorPane>
+

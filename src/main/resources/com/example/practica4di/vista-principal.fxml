@@ -5,14 +5,22 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D6EAF8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: D6EAF8;"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="contactoNuevo" layoutX="328.0" layoutY="117.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Agregar Nuevo Contacto" />
       <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
          <image>
-            <Image url="file:///C:/Users/Nomak/IdeaProjects/medac/practica4DI/images/medac.png" />
+            <Image url="C:\\Users\\Nomak\\IdeaProjects\medac\practica4DI\images\medac.png" />
          </image>
       </ImageView>
+      <Button fx:id="contactoNuevo" layoutX="328.0" layoutY="103.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Agregar Nuevo Contacto" />
+      <Button fx:id="editarContacto" layoutX="328.0" layoutY="157.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Editar Contacto Existente" />
+      <Button fx:id="eliminarContacto" layoutX="328.0" layoutY="212.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Eliminar un Contacto" />
+      <Button fx:id="mostrarContacto" layoutX="328.0" layoutY="267.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Mostrar Lista Contactos" />
+      <Button fx:id="exportarXML" layoutX="328.0" layoutY="321.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Exportar a XML" />
    </children>
 </AnchorPane>
