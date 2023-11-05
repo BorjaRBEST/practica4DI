@@ -10,7 +10,7 @@ import javafx.stage.Stage
 import javafx.event.ActionEvent
 import java.io.IOException
 
-class VistaPrincipalController {
+class PrincipalController {
 
     @FXML
     private val imageView: ImageView? = null
@@ -41,6 +41,45 @@ class VistaPrincipalController {
             val parent = fxmlLoader.load<Parent>()
             val stage = Stage()
             stage.title = "Editar Contacto Existente"
+            stage.scene = Scene(parent, 600.0, 400.0)
+            stage.show()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    }
+    @FXML
+    private fun onEliminarContactoButtonClick(event: ActionEvent) {
+        try {
+            val fxmlLoader = FXMLLoader(javaClass.getResource("vista-eliminar-contacto.fxml"))
+            val parent = fxmlLoader.load<Parent>()
+            val stage = Stage()
+            stage.title = "Eliminar Contacto Existente"
+            stage.scene = Scene(parent, 600.0, 400.0)
+            stage.show()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    }
+    @FXML
+    private fun onListaContactosButtonClick(event: ActionEvent) {
+        try {
+            val fxmlLoader = FXMLLoader(javaClass.getResource("vista-lista-contacto.fxml"))
+            val parent = fxmlLoader.load<Parent>()
+            val stage = Stage()
+            stage.title = "Mostrar Contactos Existentes"
+            stage.scene = Scene(parent, 600.0, 400.0)
+            stage.show()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    }
+    @FXML
+    private fun onExportarXMLButtonClick(event: ActionEvent) {
+        try {
+            val fxmlLoader = FXMLLoader(javaClass.getResource("vista-exportar-xml.fxml"))
+            val parent = fxmlLoader.load<Parent>()
+            val stage = Stage()
+            stage.title = "Exportar Contactos a XML"
             stage.scene = Scene(parent, 600.0, 400.0)
             stage.show()
         } catch (e: IOException) {

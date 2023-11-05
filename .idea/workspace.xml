@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7130d65-7132-423c-a7ed-4fea74b1b4fd" name="Changes" comment="Commit inicio de proyecto">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaEditarContactoController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-editar-contacto.fxml" afterDir="false" />
+    <list default="true" id="b7130d65-7132-423c-a7ed-4fea74b1b4fd" name="Changes" comment="Commit tarde del 5/11">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/EliminarContactoController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ExportarXMLController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ListaContactosController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-eliminar-contacto.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-exportar-xml.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-lista-contacto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaPrincipalController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaPrincipalController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaAgregarContactoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/AgregarContactoController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaEditarContactoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/EditarContactoController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaPrincipalController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/PrincipalController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-agregar-contacto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-agregar-contacto.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-editar-contacto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-editar-contacto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-principal.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,11 +124,19 @@
       <option name="project" value="LOCAL" />
       <updated>1699186808833</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit tarde del 5/11">
+      <created>1699206128789</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699206128789</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicio de proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicio de proyecto" />
+    <MESSAGE value="Commit tarde del 5/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit tarde del 5/11" />
   </component>
 </project>
