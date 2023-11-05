@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7130d65-7132-423c-a7ed-4fea74b1b4fd" name="Changes" comment="Commit inicio de proyecto">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaEditarContactoController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-editar-contacto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaAgregarContactoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaAgregarContactoController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaPrincipalController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/VistaPrincipalController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-agregar-contacto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-agregar-contacto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-principal.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -110,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699186080728</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit inicio de proyecto">
+      <created>1699186808833</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699186808833</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

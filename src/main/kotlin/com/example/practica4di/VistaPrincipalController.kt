@@ -34,4 +34,17 @@ class VistaPrincipalController {
             e.printStackTrace()
         }
     }
+    @FXML
+    private fun onEditarContactoButtonClick(event: ActionEvent) {
+        try {
+            val fxmlLoader = FXMLLoader(javaClass.getResource("vista-editar-contacto.fxml"))
+            val parent = fxmlLoader.load<Parent>()
+            val stage = Stage()
+            stage.title = "Editar Contacto Existente"
+            stage.scene = Scene(parent, 600.0, 400.0)
+            stage.show()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    }
 }

@@ -19,7 +19,7 @@
          </image>
       </ImageView>
       <Button fx:id="contactoNuevo" layoutX="328.0" layoutY="103.0" mnemonicParsing="false" onAction="#onAgregarContactoButtonClick" prefHeight="42.0" prefWidth="219.0" text="Agregar Nuevo Contacto" />
-      <Button fx:id="editarContacto" layoutX="328.0" layoutY="157.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Editar Contacto Existente" />
+      <Button fx:id="editarContacto" layoutX="328.0" layoutY="157.0" mnemonicParsing="false" onAction="#onEditarContactoButtonClick" prefHeight="42.0" prefWidth="219.0" text="Editar Contacto Existente" />
       <Button fx:id="eliminarContacto" layoutX="328.0" layoutY="212.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Eliminar un Contacto" />
       <Button fx:id="mostrarContacto" layoutX="328.0" layoutY="267.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Mostrar Lista Contactos" />
       <Button fx:id="exportarXML" layoutX="328.0" layoutY="321.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="219.0" text="Exportar a XML" />
