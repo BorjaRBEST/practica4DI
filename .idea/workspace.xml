@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b7130d65-7132-423c-a7ed-4fea74b1b4fd" name="Changes" comment="Commit mañana del 6/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/EditarContactoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/EditarContactoController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/EliminarContactoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/EliminarContactoController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ExportarXMLController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ExportarXMLController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ListaContactosController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ListaContactosController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-agregar-contacto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-agregar-contacto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-editar-contacto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-editar-contacto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-eliminar-contacto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-eliminar-contacto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-exportar-xml.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-exportar-xml.fxml" afterDir="false" />
@@ -156,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699257533780</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Commit mañana del 6/11">
+      <created>1699258084681</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699258084681</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

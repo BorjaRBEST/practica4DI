@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-
 <?import javafx.scene.control.Button?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.practica4di.ListaContactosController"
-            prefHeight="400.0" prefWidth="600.0"
-            style="-fx-background-color: D6EAF8">
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D6EAF8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4di.ListaContactosController">
     <children>
         <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
             <image>
-                <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png"/>
+                <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png" />
             </image>
         </ImageView>
-        <Button id="buttonVolver"
-                layoutX="43.0" layoutY="340.0"
-                onAction="#onVolverButtonClick"
-                mnemonicParsing="false"
-                text="Volver" />
+        <Button id="buttonVolver" layoutX="43.0" layoutY="340.0" mnemonicParsing="false" onAction="#onVolverButtonClick" text="Volver" />
+      <Button id="buttonListarUsuarios" layoutX="195.0" layoutY="346.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="210.0" text="Cargar usuarios existentes" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ListView id="listUsuarios" layoutX="109.0" layoutY="134.0" prefHeight="200.0" prefWidth="389.0" />
+      <ScrollBar id="scrollListarHorizontal" layoutX="109.0" layoutY="320.0" prefHeight="14.0" prefWidth="390.0" />
+      <ScrollBar id="scrollListarVertical" layoutX="499.0" layoutY="134.0" orientation="VERTICAL" prefHeight="186.0" prefWidth="14.0" />
     </children>
 
 </AnchorPane>

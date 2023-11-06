@@ -1,26 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-
 <?import javafx.scene.control.Button?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.practica4di.EditarContactoController"
-            prefHeight="400.0" prefWidth="600.0"
-            style="-fx-background-color: D6EAF8">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D6EAF8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4di.EditarContactoController">
     <children>
         <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
             <image>
-                <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png"/>
+                <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png" />
             </image>
         </ImageView>
-        <Button id="buttonVolver"
-                layoutX="43.0" layoutY="340.0"
-                onAction="#onVolverButtonClick"
-                mnemonicParsing="false"
-                text="Volver" />
+        <Label id="labelNombre" fx:id="labelNombre" layoutX="76.0" layoutY="172.0" prefHeight="34.0" prefWidth="59.0" text="Nombre:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField layoutX="149.0" layoutY="176.0" prefHeight="26.0" prefWidth="211.0" promptText="Introduzca nuevo nombre" />
+        <Label id="labelApellidos" fx:id="labelApellidos" layoutX="76.0" layoutY="206.0" prefHeight="34.0" prefWidth="74.0" text="Apellidos:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField layoutX="149.0" layoutY="210.0" prefHeight="26.0" prefWidth="211.0" promptText="Introduzca nuevos apellidos" />
+        <Label id="labelTelefono" layoutX="76.0" layoutY="240.0" prefHeight="34.0" prefWidth="123.0" text="Teléfono contacto:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField layoutX="199.0" layoutY="244.0" prefHeight="26.0" prefWidth="160.0" promptText="Introduzca nuevo teléfono" />
+        <Label id="labelCorreo" layoutX="76.0" layoutY="274.0" prefHeight="34.0" prefWidth="123.0" text="Correo electrónico:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField layoutX="199.0" layoutY="278.0" prefHeight="26.0" prefWidth="160.0" promptText="Introduzca nuevo correo" />
+        <Button id="buttonRegistrar" layoutX="259.0" layoutY="323.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Registrar" />
+        <Button id="buttonVolver" layoutX="43.0" layoutY="340.0" mnemonicParsing="false" onAction="#onVolverButtonClick" text="Volver" />
+        <TextField id="tfResultado" editable="false" layoutX="297.0" layoutY="358.0" opacity="0.0" prefHeight="34.0" prefWidth="290.0" />
+      <Label id="labelIDCorreo" fx:id="labelNombre1" layoutX="12.0" layoutY="124.0" prefHeight="34.0" prefWidth="342.0" text="Correo electronico de usuario a modificar:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField id="tfIDCorreo" layoutX="359.0" layoutY="124.0" prefHeight="34.0" prefWidth="231.0" promptText="Introduzca correo usuario a modificar" />
     </children>
 
 </AnchorPane>

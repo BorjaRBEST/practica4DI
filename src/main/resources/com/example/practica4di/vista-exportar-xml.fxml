@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-
 <?import javafx.scene.control.Button?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.practica4di.ExportarXMLController"
-            prefHeight="400.0" prefWidth="600.0"
-            style="-fx-background-color: D6EAF8">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D6EAF8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4di.ExportarXMLController">
     <children>
         <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
             <image>
-                <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png"/>
+                <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png" />
             </image>
         </ImageView>
-        <Button id="buttonVolver"
-                layoutX="43.0" layoutY="340.0"
-                onAction="#onVolverButtonClick"
-                mnemonicParsing="false"
-                text="Volver" />
+        <Button id="buttonVolver" layoutX="43.0" layoutY="340.0" mnemonicParsing="false" onAction="#onVolverButtonClick" text="Volver" />
+      <Label id="labelExportar" fx:id="labelNombre" layoutX="35.0" layoutY="143.0" prefHeight="46.0" prefWidth="389.0" text="Introduzca la ruta donde desea exportar la lista:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField id="tfExportarXML" layoutX="136.0" layoutY="203.0" prefHeight="34.0" prefWidth="343.0" promptText="Introduzca aquí la ruta deseada para exportar a XML">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button id="buttonExportarXML" layoutX="195.0" layoutY="272.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="210.0" text="Exportar a XML" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label id="labelURL" layoutX="101.0" layoutY="203.0" prefHeight="34.0" prefWidth="35.0" text="URL:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField id="tfResultadoExportarXML" editable="false" layoutX="136.0" layoutY="335.0" opacity="0.0" prefHeight="34.0" prefWidth="343.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
     </children>
 
 </AnchorPane>
