@@ -36,7 +36,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField id="tfResultadoExportarXML" editable="false" layoutX="136.0" layoutY="335.0" opacity="0.0" prefHeight="34.0" prefWidth="343.0">
+      <TextField id="tfResultadoExportarXML" editable="false" layoutX="136.0" layoutY="335.0" prefHeight="34.0" prefWidth="343.0">
          <font>
             <Font size="14.0" />
          </font>
