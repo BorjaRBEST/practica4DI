@@ -4,6 +4,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 
+<?import javafx.scene.control.Button?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.practica4di.EditarContactoController"
@@ -15,6 +16,11 @@
                 <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png"/>
             </image>
         </ImageView>
+        <Button id="buttonVolver"
+                layoutX="43.0" layoutY="340.0"
+                onAction="#onVolverButtonClick"
+                mnemonicParsing="false"
+                text="Volver" />
     </children>
 
 </AnchorPane>
