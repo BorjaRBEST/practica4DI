@@ -8,74 +8,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0"
-            style="-fx-background-color: D6EAF8"
-            xmlns="http://javafx.com/javafx/19"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.practica4di.AgregarContactoController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D6EAF8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4di.AgregarContactoController">
     <children>
     <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
     <image>
-        <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png"/>
+        <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png" />
     </image>
     </ImageView>
-      <Label id="labelNombre" fx:id="labelNombre"
-             layoutX="69.0" layoutY="140.0"
-             prefHeight="34.0" prefWidth="59.0" text="Nombre:">
+      <Label id="labelNombre" fx:id="labelNombre" layoutX="69.0" layoutY="140.0" prefHeight="34.0" prefWidth="59.0" text="Nombre:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="142.0" layoutY="144.0"
-                 prefHeight="26.0" prefWidth="199.0"
-                 promptText="Introduzca nombre" />
-      <Label id="labelApellidos"
-             fx:id="labelApellidos"
-             layoutX="69.0" layoutY="174.0"
-             prefHeight="34.0" prefWidth="74.0"
-             text="Apellidos:">
+      <TextField layoutX="142.0" layoutY="144.0" prefHeight="26.0" prefWidth="199.0" promptText="Introduzca nombre" />
+      <Label id="labelApellidos" fx:id="labelApellidos" layoutX="69.0" layoutY="174.0" prefHeight="34.0" prefWidth="74.0" text="Apellidos:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="142.0" layoutY="178.0"
-                 prefHeight="26.0" prefWidth="199.0"
-                 promptText="Introduzca apellidos" />
-      <Label id="labelTelefono"
-             layoutX="69.0" layoutY="208.0"
-             prefHeight="34.0" prefWidth="123.0"
-             text="Teléfono contacto:">
+      <TextField layoutX="142.0" layoutY="178.0" prefHeight="26.0" prefWidth="199.0" promptText="Introduzca apellidos" />
+      <Label id="labelTelefono" layoutX="69.0" layoutY="208.0" prefHeight="34.0" prefWidth="123.0" text="Teléfono contacto:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="192.0" layoutY="212.0"
-                 prefHeight="26.0"
-                 prefWidth="150.0"
-                 promptText="Introduzca teléfono" />
-      <Label id="labelCorreo"
-             layoutX="69.0" layoutY="242.0"
-             prefHeight="34.0" prefWidth="123.0"
-             text="Correo electrónico:">
+      <TextField layoutX="192.0" layoutY="212.0" prefHeight="26.0" prefWidth="150.0" promptText="Introduzca teléfono" />
+      <Label id="labelCorreo" layoutX="69.0" layoutY="242.0" prefHeight="34.0" prefWidth="123.0" text="Correo electrónico:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="192.0" layoutY="246.0"
-                 prefHeight="26.0" prefWidth="150.0"
-                 promptText="Introduzca correo" />
-      <Button id="buttonRegistrar"
-              layoutX="252.0" layoutY="291.0"
-              mnemonicParsing="false"
-              prefHeight="26.0" prefWidth="88.0"
-              text="Registrar" />
-      <Button id="buttonVolver"
-              layoutX="43.0" layoutY="340.0"
-              onAction="#onVolverButtonClick"
-              mnemonicParsing="false"
-              text="Volver" />
-      <TextField id="tfResultado"
-                 layoutX="350.0" layoutY="322.0"
-                 prefHeight="62.0" prefWidth="236.0" />
+      <TextField layoutX="192.0" layoutY="246.0" prefHeight="26.0" prefWidth="150.0" promptText="Introduzca correo" />
+      <Button id="buttonRegistrar" layoutX="252.0" layoutY="291.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Registrar" />
+      <Button id="buttonVolver" layoutX="43.0" layoutY="340.0" mnemonicParsing="false" onAction="#onVolverButtonClick" text="Volver" />
+      <TextField id="tfResultado" editable="false" layoutX="350.0" layoutY="322.0" opacity="0.0" prefHeight="62.0" prefWidth="236.0" />
     </children>
 </AnchorPane>
