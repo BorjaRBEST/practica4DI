@@ -15,15 +15,15 @@
                 <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png" />
             </image>
         </ImageView>
-        <Button id="buttonVolver" layoutX="43.0" layoutY="340.0" mnemonicParsing="false" onAction="#onVolverButtonClick" text="Volver" />
-      <Button id="buttonListarUsuarios" layoutX="195.0" layoutY="346.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="210.0" text="Cargar usuarios existentes" textAlignment="CENTER">
+        <Button fx:id="buttonVolver" layoutX="43.0" layoutY="340.0" mnemonicParsing="false" onAction="#onVolverButtonClick" text="Volver" />
+      <Button fx:id="buttonListarUsuarios" layoutX="195.0" layoutY="346.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="210.0" text="Cargar usuarios existentes" textAlignment="CENTER">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <ListView id="listUsuarios" layoutX="109.0" layoutY="134.0" prefHeight="200.0" prefWidth="389.0" />
-      <ScrollBar id="scrollListarHorizontal" layoutX="109.0" layoutY="320.0" prefHeight="14.0" prefWidth="390.0" />
-      <ScrollBar id="scrollListarVertical" layoutX="499.0" layoutY="134.0" orientation="VERTICAL" prefHeight="186.0" prefWidth="14.0" />
+      <ListView fx:id="listUsuarios" layoutX="109.0" layoutY="134.0" prefHeight="200.0" prefWidth="389.0" />
+      <ScrollBar  fx:id="scrollListarHorizontal" layoutX="109.0" layoutY="320.0" prefHeight="14.0" prefWidth="390.0" />
+      <ScrollBar fx:id="scrollListarVertical" layoutX="499.0" layoutY="134.0" orientation="VERTICAL" prefHeight="186.0" prefWidth="14.0" />
     </children>
 
 </AnchorPane>
