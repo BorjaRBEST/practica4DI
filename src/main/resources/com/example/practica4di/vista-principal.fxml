@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
          <image>
-            <Image url="C:\\Users\\Nomak\\IdeaProjects\medac\practica4DI\images\medac.png" />
+            <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png"/>
          </image>
       </ImageView>
       <Button fx:id="contactoNuevo" layoutX="328.0" layoutY="103.0" mnemonicParsing="false" onAction="#onAgregarContactoButtonClick" prefHeight="42.0" prefWidth="219.0" text="Agregar Nuevo Contacto" />
