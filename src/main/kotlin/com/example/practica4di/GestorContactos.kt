@@ -30,6 +30,15 @@ class GestorDeContactos() {
             false
         }
     }
+    fun eliminarContacto(idCorreo: String): Boolean {
+        val contacto = listaDeContactos.find { it.correo == idCorreo }
+        return if (contacto != null) {
+            listaDeContactos.remove(contacto)
+            true
+        } else {
+            false
+        }
+    }
     fun getListaDeContactos(): List<Contacto> {
         return listaDeContactos
     }
