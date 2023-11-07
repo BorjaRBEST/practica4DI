@@ -5,7 +5,7 @@ import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.scene.Node
 import javafx.scene.control.Button
-import javafx.scene.control.TextField
+import javafx.scene.control.ListView
 import javafx.stage.Stage
 import java.io.IOException
 
@@ -14,7 +14,7 @@ class ListaContactosController {
     private val gestorDeContactos = GestorDeContactos.getInstance()
 
     @FXML
-    lateinit var tfMostrarLista: TextField
+    lateinit var lvMostrarLista: ListView<String>
 
     @FXML
     lateinit var buttonVolver: Button
@@ -38,20 +38,17 @@ class ListaContactosController {
         val listaDeContactos = gestorDeContactos.getListaDeContactos()
 
         if (listaDeContactos.isEmpty()) {
-            tfMostrarLista.text = "No hay contactos en la lista."
+            lvMostrarLista.items.add("No hay contactos en la lista.")
         } else {
-            val textoFormateado = StringBuilder()
-
+            lvMostrarLista.items.clear()
             for (contacto in listaDeContactos) {
                 val nombreCompleto = "${contacto.nombre} ${contacto.apellido}"
                 val telefono = contacto.telefono
                 val correo = contacto.correo
 
-                val formato = "Nombre: $nombreCompleto, Teléfono: $telefono, Correo: $correo\n"
-                textoFormateado.append(formato)
+                val formato = "* Nombre: $nombreCompleto, Teléfono: $telefono, Correo: $correo"
+                lvMostrarLista.items.add(formato)
             }
-
-            tfMostrarLista.text = textoFormateado.toString()
         }
     }
 
