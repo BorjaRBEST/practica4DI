@@ -9,7 +9,7 @@ import java.io.IOException
 
 class EditarContactoController {
 
-    lateinit var gestorDeContactos: GestorDeContactos // Asegúrate de que esta línea esté presente
+    private val gestorDeContactos = GestorDeContactos.getInstance()
 
     @FXML
     private lateinit var tfIDCorreo: TextField
@@ -24,7 +24,10 @@ class EditarContactoController {
     private lateinit var tfTelefono: TextField
 
     @FXML
-    private lateinit var tfCorreo: TextField
+    private lateinit var tfIDCorreoNew: TextField
+
+    @FXML
+    private lateinit var tfResultado: TextField
 
     @FXML
     private fun onVolverButtonClick(event: ActionEvent) {
@@ -42,10 +45,19 @@ class EditarContactoController {
         val idCorreo = tfIDCorreo.text
         val nombre = tfNombre.text
         val apellido = tfApellidos.text
-        val telefono = tfTelefono.text.toInt() // Asegúrate de que el teléfono es un entero
-        val correo = tfCorreo.text
+        val telefono = try {
+            tfTelefono.text.toInt()
+        } catch (e: NumberFormatException) {
+            0
+        }
+        val correo = tfIDCorreoNew.text
 
-        // Lógica para actualizar el contacto con la ID de correo proporcionada
-        gestorDeContactos.actualizarContacto(idCorreo, nombre, apellido, telefono, correo) // Corregido aquí
+        val exito = gestorDeContactos.actualizarContacto(idCorreo, nombre, apellido, telefono, correo)
+
+        if (exito) {
+            tfResultado.text = "Cambios realizados con éxito en el usuario $idCorreo"
+        } else {
+            tfResultado.text = "Usuario no encontrado"
+        }
     }
 }

@@ -18,18 +18,18 @@ class GestorDeContactos() {
         listaDeContactos.add(contacto)
     }
 
-    fun actualizarContacto(idCorreo: String, nombre: String, apellido: String, telefono: Int, correo: String) {
+    fun actualizarContacto(idCorreo: String, nombre: String, apellido: String, telefono: Int, correo: String): Boolean {
         val contacto = listaDeContactos.find { it.correo == idCorreo }
-        if (contacto != null) {
+        return if (contacto != null) {
             contacto.nombre = nombre
             contacto.apellido = apellido
             contacto.telefono = telefono
             contacto.correo = correo
+            true
+        } else {
+            false
         }
     }
-
-    // Otros métodos para editar, eliminar y listar contactos
-
     fun getListaDeContactos(): List<Contacto> {
         return listaDeContactos
     }
