@@ -1,9 +1,19 @@
 package com.example.practica4di
 
-class GestorDeContactos {
+class GestorDeContactos() {
 
     private val listaDeContactos = mutableListOf<Contacto>()
 
+    companion object {
+        private var instance: GestorDeContactos? = null
+
+        fun getInstance(): GestorDeContactos {
+            if (instance == null) {
+                instance = GestorDeContactos()
+            }
+            return instance as GestorDeContactos
+        }
+    }
     fun agregarContacto(contacto: Contacto) {
         listaDeContactos.add(contacto)
     }

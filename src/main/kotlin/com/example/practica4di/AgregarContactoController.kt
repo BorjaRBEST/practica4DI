@@ -9,6 +9,8 @@ import java.io.IOException
 
 class AgregarContactoController {
 
+    private val gestorDeContactos = GestorDeContactos.getInstance()
+
     @FXML
     private lateinit var tfNombre: TextField
 
@@ -24,34 +26,25 @@ class AgregarContactoController {
     @FXML
     private lateinit var tfResultado: TextField
 
-    private lateinit var gestorDeContactos: GestorDeContactos
 
-    @FXML
-    fun initialize() {
-        // Inicializa gestorDeContactos aquí si es necesario
-        this.gestorDeContactos = GestorDeContactos()
-    }
 
     @FXML
     fun onRegistrarButtonClick() {
-        if (::gestorDeContactos.isInitialized) {
-            val nombre = tfNombre.text
-            val apellidos = tfApellidos.text
-            val telefono = try {
-                tfTelefono.text.toInt()
-            } catch (e: NumberFormatException) {
-                0
-            }
-            val correo = tfCorreo.text
-
-            val contacto = Contacto(nombre, apellidos, telefono, correo)
-
-            gestorDeContactos.agregarContacto(contacto)
-
-            tfResultado.text = "Contacto registrado correctamente: $nombre $apellidos"
+        val nombre = tfNombre.text
+        val apellidos = tfApellidos.text
+        val telefono = try {
+            tfTelefono.text.toInt()
+        } catch (e: NumberFormatException) {
+            0
         }
-    }
+        val correo = tfCorreo.text
 
+        val contacto = Contacto(nombre, apellidos, telefono, correo)
+
+        gestorDeContactos.agregarContacto(contacto)
+
+        tfResultado.text = "Contacto registrado correctamente: $nombre $apellidos"
+    }
     @FXML
     fun onVolverButtonClick(event: ActionEvent) {
         try {
@@ -62,5 +55,9 @@ class AgregarContactoController {
             e.printStackTrace()
         }
     }
-
 }
+
+
+
+
+
