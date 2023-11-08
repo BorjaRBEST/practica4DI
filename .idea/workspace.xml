@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7130d65-7132-423c-a7ed-4fea74b1b4fd" name="Changes" comment="Commit mañana del 7/11">
-      <change afterPath="$PROJECT_DIR$/test/com/example/practica4di/GestorDeContactosTest.kt" afterDir="false" />
+    <list default="true" id="b7130d65-7132-423c-a7ed-4fea74b1b4fd" name="Changes" comment="Commit mañana del 8/11">
+      <change afterPath="$PROJECT_DIR$/contactos.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ExportarXMLController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/ExportarXMLController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/GestorContactos.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/practica4di/GestorContactos.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-exportar-xml.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/practica4di/vista-exportar-xml.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/example/practica4di/GestorDeContactosTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/example/practica4di/GestorDeContactosTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699358253870</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Commit mañana del 8/11">
+      <created>1699433111642</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699433111642</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,6 +252,7 @@
     <MESSAGE value="Commit tarde del 5/11" />
     <MESSAGE value="Commit mañana del 6/11" />
     <MESSAGE value="Commit mañana del 7/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit mañana del 7/11" />
+    <MESSAGE value="Commit mañana del 8/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit mañana del 8/11" />
   </component>
 </project>

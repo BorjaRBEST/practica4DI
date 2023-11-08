@@ -8,17 +8,19 @@ class GestorDeContactosTest {
 
     private val gestorDeContactos = GestorDeContactos.getInstance()
 
+    // Pruebas unitarias para el método de agregar contacto
     @Test
     fun agregarContacto() {
-        val contacto = Contacto("John", "Doe", 123456789, "john.doe@example.com")
+        val contacto = Contacto("Borja", "Rodríguez", 123456789, "borjaalumno@medac.es")
         gestorDeContactos.agregarContacto(contacto)
         val listaDeContactos = gestorDeContactos.getListaDeContactos()
         assertTrue(listaDeContactos.contains(contacto))
     }
 
+    // Pruebas unitarias para el método de editar contacto
     @Test
     fun actualizarContacto() {
-        val contacto = Contacto("John", "Doe", 123456789, "john.doe@example.com")
+        val contacto = Contacto("Borja", "Rodríguez", 123456789, "borjaalumno@medac.es")
         val nuevoCorreo = "johndoe@example.com"
         val exito = gestorDeContactos.actualizarContacto(contacto.correo, contacto.nombre, contacto.apellido, contacto.telefono, nuevoCorreo)
         assertTrue(exito)
@@ -27,9 +29,10 @@ class GestorDeContactosTest {
         assertNotNull(contactoActualizado)
     }
 
+    // Pruebas unitarias para el método de eliminar contacto
     @Test
     fun eliminarContacto() {
-        val contacto = Contacto("John", "Doe", 123456789, "john.doe@example.com")
+        val contacto = Contacto("Borja", "Rodríguez", 123456789, "borjaalumno@medac.es")
         gestorDeContactos.agregarContacto(contacto)
         val exito = gestorDeContactos.eliminarContacto(contacto.correo)
         assertTrue(exito)
@@ -37,12 +40,14 @@ class GestorDeContactosTest {
         assertTrue(listaDeContactos.contains(contacto))
     }
 
+    // Pruebas unitarias para el método de listar contactos
     @Test
     fun getListaDeContactos() {
         val listaDeContactos = gestorDeContactos.getListaDeContactos()
         assertNotNull(listaDeContactos)
     }
 
+    // Pruebas unitarias para el método de exportación a archivo xml
     @Test
     fun exportarContactosAXML() {
         val rutaArchivo = "contactos.xml"
