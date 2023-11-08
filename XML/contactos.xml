@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<contactos>
+    <contacto correo="aaa@medac.es">
+        <nombre>Borja</nombre>
+        <apellido>RB</apellido>
+        <telefono>123456789</telefono>
+    </contacto>
+    <contacto correo="ccc@medac.es">
+        <nombre>María Luisa</nombre>
+        <apellido>Fernanda</apellido>
+        <telefono>666555444</telefono>
+    </contacto>
+</contactos>
