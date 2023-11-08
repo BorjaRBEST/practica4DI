@@ -13,15 +13,48 @@
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.practica4di.PrincipalController">
    <children>
-      <ImageView fitHeight="85.0" fitWidth="281.0" layoutX="27.0" layoutY="39.0" smooth="false">
+      <ImageView
+              fitHeight="85.0" fitWidth="281.0"
+              layoutX="27.0" layoutY="39.0" smooth="false">
          <image>
             <Image url="https://estaticos-cdn.prensaiberica.es/epi/public/file/2023/0717/06/medac-logo-7b9d0aa.png"/>
          </image>
       </ImageView>
-      <Button fx:id="contactoNuevo" layoutX="328.0" layoutY="103.0" mnemonicParsing="false" onAction="#onAgregarContactoButtonClick" prefHeight="42.0" prefWidth="219.0" text="Agregar Nuevo Contacto" />
-      <Button fx:id="editarContacto" layoutX="328.0" layoutY="157.0" mnemonicParsing="false" onAction="#onEditarContactoButtonClick" prefHeight="42.0" prefWidth="219.0" text="Editar Contacto Existente" />
-      <Button fx:id="eliminarContacto" layoutX="328.0" layoutY="212.0" mnemonicParsing="false" onAction="#onEliminarContactoButtonClick" prefHeight="42.0" prefWidth="219.0" text="Eliminar un Contacto" />
-      <Button fx:id="mostrarContacto" layoutX="328.0" layoutY="267.0" mnemonicParsing="false" onAction="#onListaContactosButtonClick" prefHeight="42.0" prefWidth="219.0" text="Mostrar Lista Contactos" />
-      <Button fx:id="exportarXML" layoutX="328.0" layoutY="321.0" mnemonicParsing="false" onAction="#onExportarXMLButtonClick" prefHeight="42.0" prefWidth="219.0" text="Exportar a XML" />
+      <Button
+              fx:id="contactoNuevo"
+              layoutX="328.0" layoutY="103.0"
+              prefHeight="42.0" prefWidth="219.0"
+              mnemonicParsing="false"
+              onAction="#onAgregarContactoButtonClick"
+              text="Agregar Nuevo Contacto" />
+      <Button
+              fx:id="editarContacto"
+              layoutX="328.0" layoutY="157.0"
+              prefHeight="42.0" prefWidth="219.0"
+              mnemonicParsing="false"
+              onAction="#onEditarContactoButtonClick"
+              text="Editar Contacto Existente" />
+
+      <Button
+              fx:id="eliminarContacto"
+              layoutX="328.0" layoutY="212.0"
+              prefHeight="42.0" prefWidth="219.0"
+              mnemonicParsing="false"
+              onAction="#onEliminarContactoButtonClick"
+              text="Eliminar un Contacto" />
+      <Button
+              fx:id="mostrarContacto"
+              layoutX="328.0" layoutY="267.0"
+              prefHeight="42.0" prefWidth="219.0"
+              mnemonicParsing="false"
+              onAction="#onListaContactosButtonClick"
+              text="Mostrar Lista Contactos" />
+      <Button
+              fx:id="exportarXML"
+              layoutX="328.0" layoutY="321.0"
+              prefHeight="42.0" prefWidth="219.0"
+              mnemonicParsing="false"
+              onAction="#onExportarXMLButtonClick"
+              text="Exportar a XML" />
    </children>
 </AnchorPane>
