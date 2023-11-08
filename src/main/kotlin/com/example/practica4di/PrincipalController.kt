@@ -15,25 +15,28 @@ class PrincipalController {
     @FXML
     private val imageView: ImageView? = null
 
+    // Método de inicialización que establece la imagen en el ImageView
     fun initialize() {
-        val imagePath = "file:///C:/Users/Nomak/IdeaProjects/medac/practica4DI/images/medac.png"
-        val image = Image(imagePath)
-        imageView?.setImage(image)
+        val imagePath = "file:///C:/Users/Nomak/IdeaProjects/medac/practica4DI/images/medac.png" // Ruta de la imagen
+        val image = Image(imagePath) // Crear una instancia de Image
+        imageView?.setImage(image) // Establecer la imagen en el ImageView
     }
 
+    // Métodos para manejar los clics en los botones y mostrar las respectivas vistas
     @FXML
     private fun onAgregarContactoButtonClick(event: ActionEvent) {
         try {
-            val fxmlLoader = FXMLLoader(javaClass.getResource("vista-agregar-contacto.fxml"))
-            val parent = fxmlLoader.load<Parent>()
-            val stage = Stage()
-            stage.title = "Agregar Nuevo Contacto"
-            stage.scene = Scene(parent, 600.0, 400.0)
-            stage.show()
+            val fxmlLoader = FXMLLoader(javaClass.getResource("vista-agregar-contacto.fxml")) // Cargar la vista FXML
+            val parent = fxmlLoader.load<Parent>() // Cargar la vista como un objeto Parent
+            val stage = Stage() // Crear una nueva instancia de Stage
+            stage.title = "Agregar Nuevo Contacto" // Establecer el título de la ventana
+            stage.scene = Scene(parent, 600.0, 400.0) // Establecer la escena con el objeto Parent y dimensiones
+            stage.show() // Mostrar la ventana
         } catch (e: IOException) {
             e.printStackTrace()
         }
     }
+
     @FXML
     private fun onEditarContactoButtonClick(event: ActionEvent) {
         try {
@@ -47,6 +50,7 @@ class PrincipalController {
             e.printStackTrace()
         }
     }
+
     @FXML
     private fun onEliminarContactoButtonClick(event: ActionEvent) {
         try {
@@ -60,6 +64,7 @@ class PrincipalController {
             e.printStackTrace()
         }
     }
+
     @FXML
     private fun onListaContactosButtonClick(event: ActionEvent) {
         try {
@@ -73,6 +78,7 @@ class PrincipalController {
             e.printStackTrace()
         }
     }
+
     @FXML
     private fun onExportarXMLButtonClick(event: ActionEvent) {
         try {
