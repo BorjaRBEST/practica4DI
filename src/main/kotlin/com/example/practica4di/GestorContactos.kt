@@ -1,5 +1,8 @@
 package com.example.practica4di
 
+import java.io.FileWriter
+import javax.xml.stream.XMLOutputFactory
+
 class GestorDeContactos() {
 
     private val listaDeContactos = mutableListOf<Contacto>()
@@ -41,5 +44,37 @@ class GestorDeContactos() {
     }
     fun getListaDeContactos(): List<Contacto> {
         return listaDeContactos
+    }
+    // Exporta la lista de contactos a un archivo XML en la ruta especificada
+    fun exportarContactosAXML(rutaArchivo: String) {
+        val xmlOutputFactory = XMLOutputFactory.newInstance()
+        val xmlStreamWriter = xmlOutputFactory.createXMLStreamWriter(FileWriter(rutaArchivo))
+
+        xmlStreamWriter.writeStartDocument()
+        xmlStreamWriter.writeStartElement("contactos")
+
+        for (contacto in listaDeContactos) {
+            xmlStreamWriter.writeStartElement("contacto")
+            xmlStreamWriter.writeAttribute("correo", contacto.correo)
+
+            xmlStreamWriter.writeStartElement("nombre")
+            xmlStreamWriter.writeCharacters(contacto.nombre)
+            xmlStreamWriter.writeEndElement()
+
+            xmlStreamWriter.writeStartElement("apellido")
+            xmlStreamWriter.writeCharacters(contacto.apellido)
+            xmlStreamWriter.writeEndElement()
+
+            xmlStreamWriter.writeStartElement("telefono")
+            xmlStreamWriter.writeCharacters(contacto.telefono.toString())
+            xmlStreamWriter.writeEndElement()
+
+            xmlStreamWriter.writeEndElement()
+        }
+
+        xmlStreamWriter.writeEndElement()
+        xmlStreamWriter.writeEndDocument()
+        xmlStreamWriter.flush()
+        xmlStreamWriter.close()
     }
 }
